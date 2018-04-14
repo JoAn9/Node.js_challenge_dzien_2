@@ -3,7 +3,7 @@ const fs = require('fs');
 fs.readFile('./data/zadanieDnia/test.txt', 'utf8', (err, data) => {
     if(err === null) {
         let text = '';
-        let array = data.split("");
+        const array = data.split("");
 
         array.forEach((val,i) => {
             if(i % 2 === 0) {
